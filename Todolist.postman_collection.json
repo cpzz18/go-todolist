@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "28debe51-7833-42b2-aa31-267e5b90506c",
+		"name": "Todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38265152"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/todos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 4,\r\n        \"title\": \"kamu\",\r\n        \"description\": \"laparr\",\r\n        \"done\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/todos/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/todos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/todos/3",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"iyaaa\",\r\n    \"description\" : \"iyaaa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/todos/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/todos/3/check",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"done\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/todos/3/check",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"todos",
+						"3",
+						"check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
